@@ -32,6 +32,6 @@ limactl shell <vm-instance-name>
 
 ## Use the docker context
 ```
-docker context create amd64 --docker "host=unix://${HOME}/.lima/lima/sock/docker.sock"
+docker context create amd64 --docker "host=unix://${HOME}/.lima/lima-x86/sock/docker.sock"
 docker docker context use amd64
 ```
