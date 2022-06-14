@@ -28,7 +28,7 @@ containerd:
   system: false
   user: false
 
-# cloud-init hook 定义
+# cloud-init hook
 provision:
 # Execution mode inside VM
 - mode: system
@@ -82,7 +82,7 @@ hostResolver:
 portForwards:
 - guestSocket: "/run/user/{{.UID}}/docker.sock"
   hostSocket: "{{.Dir}}/sock/docker.sock"
-# 自己定义的启动后消息输出
+# Customized output message
 message: |
   To run `docker` on the host (assumes docker-cli is installed), run the following commands:
   ------
