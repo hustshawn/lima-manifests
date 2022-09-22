@@ -36,3 +36,8 @@ limactl shell <vm-instance-name>
 docker context create amd64 --docker "host=unix://${HOME}/.lima/lima-x86/sock/docker.sock"
 docker docker context use amd64
 ```
+
+## FAQ
+- Facing an error like  `Error saving credentials: error storing credentials - err: exit status 1, out: `Post "http://ipc/registry/credstore-updated": dial unix /Users/xxx/Library/Containers/com.docker.docker/Data/backend.sock: connect: no such file or directory`
+
+Solution: Simply remove `"credStore": "desktop"` from the `~/.docker/config.json`.
