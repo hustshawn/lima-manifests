@@ -18,6 +18,7 @@ brew install lima
 ```
 limactl start <manifest-file>
 ```
+use `--name=default` if you wanna make it as the default VM.
 
 
 ### List VM
